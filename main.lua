@@ -1,9 +1,9 @@
-local silenceFrame = CreateFrame("FRAME", "SF")
-local silenceOpen = "silence_requested"
+local silenceFrame = CreateFrame("FRAME", "SilenceFrame")
+local silenceRequested = "TALKINGHEAD_REQUESTED"
 
-local function silence(self, evt, text, source)
-  c_TalkingHead.IgnoreCurrentTalkingHead();
+function Silence(self, evt, text, source)
+  C_TalkingHead.IgnoreCurrentTalkingHead();
 end
 
-silenceFrame:RegisterEvent("TALKINGHEAD_REQUESTED")
-silenceFrame:SetScript("OnEvent", silence)
+SilenceFrame:RegisterEvent(silenceRequested);
+SilenceFrame:SetScript("OnEvent", Silence);
