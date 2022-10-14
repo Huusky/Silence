@@ -1,0 +1,7 @@
+## Interface: 100002
+## Title: Silence!
+## Notes: "Quiet the talking heads"
+## Author: Husky
+## Version: 1.0
+
+main.lua
